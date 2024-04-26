@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Portals</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+  <body>
+
+
+<!--The portals itself-->
+    <div class="row" style="margin-left:40px;">
+      <div class="column" style="background-color: white;">
+        <img class="logo" src="assets/playground.png" alt="Playground"/>
+        <div class="portal-button" style="background-color: #8AC75D;" data-hover-text="Playground">
+          <a onclick="window.open(this.href,'_blank');return false;" href="https://world.colearnco.org/@/playground" style="color: black;">click here</a>        </div> 
+     </div>
+
+     <div class="column" style="background-color: white;">
+      <img class="logo" src="assets/the-forest.png" alt="The Forest"/>
+      <div class="portal-button" style="background-color: #8AC75D;" data-hover-text="The Forest">
+        <a onclick="window.open(this.href,'_blank');return false;" href="https://world.colearnco.org/@/garden-of-eden" style="color: black;">click here</a>        </div> 
+   </div>
+
+   <div class="column" style="background-color: white;">
+    <img class="logo" src="assets/the-labyrinth.png" alt="The Labyrinth"/>
+    <div class="portal-button" style="background-color: #8AC75D;" data-hover-text="The Labyrinth">
+      <a onclick="window.open(this.href,'_blank');return false;" href="https://world.colearnco.org/@/the-labyrinth" style="color: black;">click here</a>        </div> 
+ </div>
+
+
+ <div class="column" style="background-color: white;">
+  <img class="logo" src="assets/big-history-project.png" alt="Big History Project"/>
+  <div class="portal-button" style="background-color: #8AC75D;" data-hover-text="Big History Project">
+    <a onclick="window.open(this.href,'_blank');return false;" href="https://world.colearnco.org/@/bighistory" style="color: black;">click here</a>        </div> 
+</div>
+
+ <div class="column" style="background-color: white;">
+  <img class="logo" src="assets/a-garden-of-the-bees.png" alt="A Garden of Bees"/>
+  <div class="portal-button" style="background-color: #8AC75D;" data-hover-text="A Garden of Bees">
+    <a onclick="window.open(this.href,'_blank');return false;" href="https://world.colearnco.org/@/a-garden-for-the-bees" style="color: black;">click here</a>        </div> 
+</div>
+
+
+        <script>
+var active = 0;
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href === document.URL) {
+        active = i;
+    }
+}
+document.links[active].className = 'active';
+            </script>
+  </body>
+</html>
